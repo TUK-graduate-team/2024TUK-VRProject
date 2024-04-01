@@ -1,0 +1,31 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/UE5.3.2/VRHandProject/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/VRTemplate/Maps/VRTemplateMap.umap",
+				"C:/UE5.3.2/VRHandProject/Content/BP/VRPawn2.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/VRTemplate/Blueprints/VRGameMode.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/BP/VRPawnGameMode.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/VRTemplate/Blueprints/VRPawn.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/BP/BP_Hand.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/Hands/Models/OculusHand_L.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/Hands/Models/OculusHand_L_Skeleton.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/BP/BP_RightHand.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/BP/BPC_Hand.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/BP/BPC_PickupObject.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/BP/vrpawn3.uasset",
+				"C:/Program Files/Epic Games/UE_5.3/Engine/Content/BasicShapes/Cube.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/SM_Card.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/BP_VRPawn.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/BP/VRInteractable.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/BP/SM_Card.uasset",
+				"C:/Program Files/Epic Games/UE_5.3/Engine/Content/VREditor/BasicMeshes/card.uasset",
+				"C:/UE5.3.2/VRHandProject/Content/SM_Card2.uasset"
+			]
+		}
+	]
+}
