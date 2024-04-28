@@ -1,0 +1,43 @@
+https://developer.oculus.com/documentation/unreal/unreal-hand-tracking/
+
+https://youtu.be/TJpmf4mJhes?si=jfcHDdx2vvhWp7Qa 레이저 포인터 위젯상호작용
+
+1. 포인터 이용해서 티안나게 터치하는 느낌
+동작처리가 아니라 그냥 spline이 닿으면 처리가 되도록? 이렇게 하면 spline의 길이만 조정하면 됨.
+"OnBeginCursorOver" 및 "OnEndCursorOver" 이벤트를 가지고 있음. (충돌 감지) 이것도 가능성 있어보임
+위젯에서 OnBeginCursorOver하면 다음 동작되도록?
+
+스플라인메시를 touch이벤트로 동작하게 한다면? 
+그 뒤에 Custom Event로 만들어서 press 상호작용하면?
+위에 영상보면서 스플라인부분 검토해서 수정해보기.
+
+커서 및 포인터 구현: 사용자의 손가락 끝에 가상의 커서나 포인터를 표시하여, 
+현재 어떤 위젯에 포인팅되고 있는지 시각적으로 나타냄. 
+이는 사용자가 보다 직관적으로 3D UI와 상호작용할 수 있음.
+
+2. BP_Hand에서 SplineMesh가 위젯과 3.5cm 거리 계산 후 bool 변수 isClicked를 추가해서 True일 경우,
+   click, false일 경우 클릭이 안되게 한 후 위젯에서 on hovered가 되면 BP_Hand Actor의 isClicked 변수를 get해서 true일 경우
+   click이벤트가 발생되도록 -> 그럼 on click이벤트 후 상호작용.
+
+
+수정, 더 보완해야 할 것 : 위젯 클릭의 정확성, 스플라인 메시 위치 조정(딱히?), 키오스크 기능적인 부분 완성,
+                               터치를 했다는 느낌 살리기, grab동작 추가해서 서로 동작이 되는지, 키오스크 크기에 맞춘 위젯
+                               텔레포트, grab 꽂기
+
+스플라인 조정,
+BP_VRSpectator, InstancedFoliageActor, RecastNavMesh-Default, SphereReflectionCapture
+
+
+BP_PawnLaser에 오른손(BP_Hand)은 위젯 터치 상호작용, 왼손(BP_Hand1)은 핀치그랩 동작 가능하도록 구현
+왼손 widgetinteraction 없애서 오른손 여러번 hovered되는거 수정함.
+
+
+2. 충돌처리?
+
+3. 비긴터치 상호작용
+
+grab 부분
+
+자유(Free): 액터의 위치와 방향이 모션 컨트롤러로 오브젝트를 잡은 곳을 기준으로 정해짐
+
+스냅(Snap): 액터의 위치와 방향이 모션 컨트롤러를 기준으로 정해짐
